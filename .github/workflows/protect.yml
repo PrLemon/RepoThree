@@ -1,0 +1,13 @@
+name: Update branch protections
+on:
+  workflow_dispatch:
+
+jobs:
+  apply-rules:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Call Action
+      uses: PrLemon/protect-master-branch@master
+      with:
+        required_approvers: 2
+      
