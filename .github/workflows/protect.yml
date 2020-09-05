@@ -9,5 +9,5 @@ jobs:
     - name: Call Action
       uses: PrLemon/protect-master-branch@master
       with:
-        required_approvers: 2
+        approvers: 2
       
